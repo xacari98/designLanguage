@@ -3,73 +3,344 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aethera Peptides</title>
+    <title>Aethera Field Supply</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="mist"></div>
-    <header class="top-nav">
-      <div class="brand">Aethera</div>
-      <nav>
-        <a href="#science">Science</a>
-        <a href="#ritual">Ritual</a>
-        <a href="#purity">Purity</a>
-      </nav>
-      <button class="ghost-btn">Join Waitlist</button>
-    </header>
-
-    <main>
-      <section class="hero">
-        <p class="overline">Precision peptide skincare</p>
-        <h1>Soft chemistry for luminous, future skin.</h1>
-        <p class="intro">
-          Aethera blends clinically calibrated peptides with a serene, sensory ritual —
-          restoring firmness and radiance with weightless elegance.
-        </p>
-        <div class="hero-actions">
-          <button>Explore Collection</button>
-          <a href="#science">Read the formula story</a>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="topbar">
+        <p class="micro-copy">AETHERA FIELD SUPPLY / REV 04</p>
+        <div class="topbar-actions">
+          <a href="#collection">COLLECTION</a>
+          <a href="#protocol">PROTOCOL</a>
+          <a href="#dispatch">DISPATCH</a>
+          <button class="cart-button" type="button" data-cart-open>
+            CART <span data-cart-count>00</span>
+          </button>
         </div>
-      </section>
+      </header>
 
-      <section id="science" class="card-grid">
-        <article class="glass-card">
-          <h2>Biomimetic Actives</h2>
-          <p>
-            Tripeptides and signal peptides mirror the skin's natural language, supporting
-            collagen response while remaining gentle on barrier function.
-          </p>
-        </article>
-        <article class="glass-card">
-          <h2>Cloudlight Texture</h2>
-          <p>
-            A translucent emulsion that disappears on contact, leaving only a dewy halo and
-            a subtle veil of hydration.
-          </p>
-        </article>
-        <article id="purity" class="glass-card">
-          <h2>Quiet Purity</h2>
-          <p>
-            Fragrance-free, dermatologist reviewed, and formulated without unnecessary fillers.
-            Nothing harsh. Nothing heavy.
-          </p>
-        </article>
-      </section>
+      <main class="store-grid">
+        <section class="hero-panel panel">
+          <div class="hero-copy">
+            <p class="eyebrow">PERFORMANCE SKIN SYSTEMS / DIRECT-TO-SKIN</p>
+            <h1>
+              CLINICAL TEXTURES
+              <span>FOR A SOFTER FUTURE.</span>
+            </h1>
+            <p class="hero-intro">
+              Built like a field manual, sold like a collector drop. Aethera packages
+              peptide-rich formulas as precision objects: tactile, trustworthy, and
+              slightly overclocked.
+            </p>
+          </div>
 
-      <section id="ritual" class="ritual">
-        <h2>An evening ritual in three breaths</h2>
-        <ol>
-          <li><span>01</span> Press 2 drops onto damp skin.</li>
-          <li><span>02</span> Glide upward from jaw to temple.</li>
-          <li><span>03</span> Let the peptide veil settle overnight.</li>
-        </ol>
-      </section>
-    </main>
+          <div class="hero-meta">
+            <div class="meta-block">
+              <span>FOCUS</span>
+              <strong>BARRIER / FIRMNESS / RADIANCE</strong>
+            </div>
+            <div class="meta-block">
+              <span>DROP</span>
+              <strong>SPRING ISSUE / LIMITED BATCH 212</strong>
+            </div>
+            <div class="meta-block accent">
+              <span>STATUS</span>
+              <strong>LIVE INVENTORY</strong>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="primary-action" href="#collection">ENTER STORE</a>
+            <a class="secondary-action" href="#system-report">READ SYSTEM REPORT</a>
+          </div>
+        </section>
+
+        <section class="signal-panel panel">
+          <div class="signal-mark">A</div>
+          <p class="signal-caption">
+            STENCILED GEOMETRY. REDLINE STRUCTURE. LAB-GRADE LANGUAGE.
+          </p>
+          <p class="signal-text">
+            Inspired by shipping marks, procedure folders, and the clean severity of
+            institutional print.
+          </p>
+        </section>
+
+        <section class="ticker panel" aria-label="Store announcements">
+          <div class="ticker-track">
+            <span>NEW: PEPTIDE VEIL 50ML</span>
+            <span>FREE PRIORITY DISPATCH ABOVE 180 USD</span>
+            <span>TRADE SAMPLE KITS OPEN FOR STYLISTS + FACIALISTS</span>
+            <span>DROP NOTES UPDATED WEEKLY</span>
+          </div>
+        </section>
+
+        <section id="collection" class="collection panel">
+          <div class="section-heading">
+            <p class="eyebrow">CURRENT INVENTORY</p>
+            <h2>THE COLLECTION</h2>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card" data-product="Peptide Veil" data-price="$84">
+              <div class="product-visual visual-veil">
+                <span>01</span>
+              </div>
+              <div class="product-body">
+                <p class="product-code">UNIT / PV-01</p>
+                <h3>PEPTIDE VEIL</h3>
+                <p>
+                  Weightless emulsion engineered for overnight repair with signal peptides,
+                  snow mushroom, and a dry-touch finish.
+                </p>
+                <dl class="specs">
+                  <div>
+                    <dt>FORMAT</dt>
+                    <dd>50ML</dd>
+                  </div>
+                  <div>
+                    <dt>TEXTURE</dt>
+                    <dd>CLOUD FILM</dd>
+                  </div>
+                </dl>
+                <div class="product-footer">
+                  <strong>$84</strong>
+                  <button type="button" data-add-cart>Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product="Signal Wash" data-price="$46">
+              <div class="product-visual visual-wash">
+                <span>02</span>
+              </div>
+              <div class="product-body">
+                <p class="product-code">UNIT / SW-02</p>
+                <h3>SIGNAL WASH</h3>
+                <p>
+                  Low-foam cleanser with amino acids and green tea for a clean reset
+                  without the over-stripped aftermath.
+                </p>
+                <dl class="specs">
+                  <div>
+                    <dt>FORMAT</dt>
+                    <dd>120ML</dd>
+                  </div>
+                  <div>
+                    <dt>PROFILE</dt>
+                    <dd>SOFT FOAM</dd>
+                  </div>
+                </dl>
+                <div class="product-footer">
+                  <strong>$46</strong>
+                  <button type="button" data-add-cart>Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product="Night Compression Mask" data-price="$68">
+              <div class="product-visual visual-mask">
+                <span>03</span>
+              </div>
+              <div class="product-body">
+                <p class="product-code">UNIT / NM-03</p>
+                <h3>NIGHT COMPRESSION MASK</h3>
+                <p>
+                  Dense recovery cream for cold air, long flights, and post-treatment skin
+                  that needs calm instead of noise.
+                </p>
+                <dl class="specs">
+                  <div>
+                    <dt>FORMAT</dt>
+                    <dd>75ML</dd>
+                  </div>
+                  <div>
+                    <dt>PROFILE</dt>
+                    <dd>VELVET SEAL</dd>
+                  </div>
+                </dl>
+                <div class="product-footer">
+                  <strong>$68</strong>
+                  <button type="button" data-add-cart>Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card featured" data-product="Field Set / Complete" data-price="$188">
+              <div class="product-visual visual-set">
+                <span>04</span>
+              </div>
+              <div class="product-body">
+                <p class="product-code">UNIT / FS-04</p>
+                <h3>FIELD SET / COMPLETE</h3>
+                <p>
+                  The full sequence in a red-banded dispatch case. Best for first orders,
+                  gifting, and anyone who prefers the whole system at once.
+                </p>
+                <dl class="specs">
+                  <div>
+                    <dt>INCLUDES</dt>
+                    <dd>4 UNITS</dd>
+                  </div>
+                  <div>
+                    <dt>ADVANTAGE</dt>
+                    <dd>SAVE 24 USD</dd>
+                  </div>
+                </dl>
+                <div class="product-footer">
+                  <strong>$188</strong>
+                  <button type="button" data-add-cart>Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="system-report" class="report panel">
+          <div class="section-heading">
+            <p class="eyebrow">SYSTEM REPORT</p>
+            <h2>WHY THIS LOOKS DIFFERENT</h2>
+          </div>
+
+          <div class="report-grid">
+            <article>
+              <p class="report-label">01 / TRUST</p>
+              <p>
+                The formulas stay clean and clinically legible. The design borrows from
+                manuals, not beauty clichés, so the brand feels competent before it feels
+                decorative.
+              </p>
+            </article>
+            <article>
+              <p class="report-label">02 / TENSION</p>
+              <p>
+                Large industrial type holds the page together while blurred product visuals
+                add the acid-like disruption that keeps the system from going sterile.
+              </p>
+            </article>
+            <article>
+              <p class="report-label">03 / DELIGHT</p>
+              <p>
+                Quick tactile responses, hidden scan details, and dispatch toasts create
+                small moments of lift without slowing down the storefront.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="protocol" class="protocol panel">
+          <div class="section-heading">
+            <p class="eyebrow">USAGE PROTOCOL</p>
+            <h2>THE DAILY SEQUENCE</h2>
+          </div>
+
+          <ol class="protocol-list">
+            <li>
+              <span>01</span>
+              <div>
+                <strong>CLEAR THE SURFACE</strong>
+                <p>Run Signal Wash for 30 seconds and leave a trace of water on the skin.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <strong>PRESS IN THE ACTIVES</strong>
+                <p>Apply Peptide Veil to damp skin so the texture settles as a fine film.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <strong>SEAL FOR RECOVERY</strong>
+                <p>Use Night Compression Mask on evenings when skin reads dry, tense, or overworked.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="quote panel">
+          <p class="quote-mark">“</p>
+          <blockquote>
+            It feels like buying skin care from a design studio that somehow also owns a
+            research archive.
+          </blockquote>
+          <p class="quote-source">CLIENT NOTE / EARLY ACCESS COHORT</p>
+        </section>
+
+        <section id="dispatch" class="dispatch panel">
+          <div class="dispatch-copy">
+            <p class="eyebrow">DISPATCH DESK</p>
+            <h2>JOIN THE DROP LIST</h2>
+            <p>
+              Early access to batch releases, studio notes, and the occasional trade-only
+              sample run.
+            </p>
+          </div>
+          <form class="dispatch-form">
+            <label>
+              EMAIL
+              <input type="email" placeholder="name@domain.com" />
+            </label>
+            <button type="submit">REQUEST ACCESS</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite" data-toast hidden>
+      <p data-toast-text>ITEM ADDED TO CART</p>
+    </div>
+
+    <script>
+      const cartCount = document.querySelector("[data-cart-count]");
+      const toast = document.querySelector("[data-toast]");
+      const toastText = document.querySelector("[data-toast-text]");
+      const addButtons = document.querySelectorAll("[data-add-cart]");
+      let count = 0;
+      let toastTimer;
+
+      const showToast = (message) => {
+        toastText.textContent = message;
+        toast.hidden = false;
+        toast.classList.remove("toast-live");
+        void toast.offsetWidth;
+        toast.classList.add("toast-live");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toast.hidden = true;
+        }, 1500);
+      };
+
+      addButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const card = button.closest(".product-card");
+          count += 1;
+          cartCount.textContent = String(count).padStart(2, "0");
+          button.textContent = "Added";
+          button.disabled = true;
+          setTimeout(() => {
+            button.textContent = "Add to cart";
+            button.disabled = false;
+          }, 900);
+          showToast(`${card.dataset.product.toUpperCase()} / ${card.dataset.price} ADDED`);
+        });
+      });
+
+      document.querySelector(".dispatch-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        showToast("DISPATCH REQUEST LOGGED");
+      });
+
+      console.log("AETHERA FIELD SUPPLY / If you're reading this, you're in the archive.");
+    </script>
   </body>
 </html>
