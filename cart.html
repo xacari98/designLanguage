@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Aethera Field Supply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="micro-copy brand-lockup" href="index.html">AETHERA FIELD SUPPLY / REV 05</a>
+        <div class="topbar-actions">
+          <a href="index.html#collection">COLLECTION</a>
+          <a href="index.html#protocol">PROTOCOL</a>
+          <a href="cart.html" class="cart-button">CART <span data-cart-count>00</span></a>
+        </div>
+      </header>
+
+      <main class="cart-layout" data-cart-root>
+        <section class="cart-main panel">
+          <nav class="breadcrumb micro-copy">
+            <a href="index.html">STORE</a> / <span>CART</span>
+          </nav>
+          <div class="section-heading">
+            <p class="eyebrow">DISPATCH REVIEW</p>
+            <h1 class="detail-title">YOUR CART</h1>
+          </div>
+
+          <div class="cart-empty" data-cart-empty hidden>
+            <p>Your field kit is empty. Start with the current collection.</p>
+            <a class="primary-action" href="index.html#collection">RETURN TO STORE</a>
+          </div>
+
+          <div class="cart-items" data-cart-items></div>
+        </section>
+
+        <aside class="cart-summary panel">
+          <p class="eyebrow">ORDER TOTALS</p>
+          <div class="summary-rows">
+            <div><span>SUBTOTAL</span><strong data-subtotal>$0</strong></div>
+            <div><span>SHIPPING</span><strong data-shipping>FREE</strong></div>
+            <div class="summary-total"><span>TOTAL</span><strong data-total>$0</strong></div>
+          </div>
+          <button class="primary-action" type="button">PROCEED TO CHECKOUT</button>
+          <p class="summary-note">
+            Dispatch is free above $180. Cart state is stored locally across product pages.
+          </p>
+        </aside>
+      </main>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite" data-toast hidden>
+      <p data-toast-text>ITEM ADDED TO CART</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

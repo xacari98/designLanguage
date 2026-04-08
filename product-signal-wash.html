@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal Wash | Aethera Field Supply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="micro-copy brand-lockup" href="index.html">AETHERA FIELD SUPPLY / REV 05</a>
+        <div class="topbar-actions">
+          <a href="index.html#collection">COLLECTION</a>
+          <a href="index.html#protocol">PROTOCOL</a>
+          <a href="cart.html" class="cart-button">CART <span data-cart-count>00</span></a>
+        </div>
+      </header>
+
+      <main class="detail-layout">
+        <section class="detail-hero panel">
+          <nav class="breadcrumb micro-copy">
+            <a href="index.html">STORE</a> / <span>SIGNAL WASH</span>
+          </nav>
+          <div class="detail-grid">
+            <figure class="detail-image">
+              <img
+                src="https://unsplash.com/photos/qaniwuNUE5k/download?force=true&w=1600"
+                alt="Facial cleanser bottle balanced on lab equipment"
+              />
+            </figure>
+
+            <div class="detail-copy">
+              <p class="eyebrow">UNIT / SW-02</p>
+              <h1 class="detail-title">SIGNAL WASH</h1>
+              <p class="detail-price">$46</p>
+              <p class="detail-body">
+                A low-foam daily cleanser that removes sunscreen, city dust, and product
+                residue while leaving the barrier intact and ready for actives.
+              </p>
+
+              <dl class="detail-specs">
+                <div><dt>FORMAT</dt><dd>120ML</dd></div>
+                <div><dt>TEXTURE</dt><dd>SOFT FOAM</dd></div>
+                <div><dt>USE</dt><dd>AM / PM</dd></div>
+                <div><dt>RINSE</dt><dd>FAST CLEAN</dd></div>
+              </dl>
+
+              <div class="hero-actions">
+                <button class="primary-action" type="button" data-add-cart data-sku="sw02">
+                  Add to cart
+                </button>
+                <a class="secondary-action" href="cart.html">VIEW CART</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="detail-info panel">
+          <div class="detail-columns">
+            <article>
+              <p class="report-label">ACTIVES</p>
+              <p>Amino surfactants, green tea extract, glycerin, and allantoin.</p>
+            </article>
+            <article>
+              <p class="report-label">BEST FOR</p>
+              <p>Normal, combination, and treatment-sensitive skin.</p>
+            </article>
+            <article>
+              <p class="report-label">APPLICATION</p>
+              <p>Massage on damp skin for 30 seconds, then rinse without overworking.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="related-products panel">
+          <div class="section-heading">
+            <p class="eyebrow">PAIR WITH</p>
+            <h2>FOLLOW WITH</h2>
+          </div>
+          <div class="mini-grid">
+            <a class="mini-card" href="product-peptide-veil.html">
+              <img src="https://unsplash.com/photos/g8PdaI6fC5c/download?force=true&w=900" alt="Peptide Veil bottle" />
+              <span>PEPTIDE VEIL</span>
+            </a>
+            <a class="mini-card" href="product-field-set.html">
+              <img src="https://unsplash.com/photos/QbHwPe1HE84/download?force=true&w=900" alt="Field Set flatlay" />
+              <span>FIELD SET / COMPLETE</span>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite" data-toast hidden>
+      <p data-toast-text>ITEM ADDED TO CART</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

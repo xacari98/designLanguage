@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peptide Veil | Aethera Field Supply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="micro-copy brand-lockup" href="index.html">AETHERA FIELD SUPPLY / REV 05</a>
+        <div class="topbar-actions">
+          <a href="index.html#collection">COLLECTION</a>
+          <a href="index.html#protocol">PROTOCOL</a>
+          <a href="cart.html" class="cart-button">CART <span data-cart-count>00</span></a>
+        </div>
+      </header>
+
+      <main class="detail-layout">
+        <section class="detail-hero panel">
+          <nav class="breadcrumb micro-copy">
+            <a href="index.html">STORE</a> / <span>PEPTIDE VEIL</span>
+          </nav>
+          <div class="detail-grid">
+            <figure class="detail-image">
+              <img
+                src="https://unsplash.com/photos/g8PdaI6fC5c/download?force=true&w=1600"
+                alt="Serum bottles displayed on a stone pedestal"
+              />
+            </figure>
+
+            <div class="detail-copy">
+              <p class="eyebrow">UNIT / PV-01</p>
+              <h1 class="detail-title">PEPTIDE VEIL</h1>
+              <p class="detail-price">$84</p>
+              <p class="detail-body">
+                A weightless repair emulsion built to disappear fast and work overnight.
+                Peptide Veil supports elasticity, hydration, and surface calm without the
+                padded feel of heavier creams.
+              </p>
+
+              <dl class="detail-specs">
+                <div><dt>FORMAT</dt><dd>50ML</dd></div>
+                <div><dt>TEXTURE</dt><dd>CLOUD FILM</dd></div>
+                <div><dt>USE</dt><dd>PM / DAILY</dd></div>
+                <div><dt>FINISH</dt><dd>DRY TOUCH</dd></div>
+              </dl>
+
+              <div class="hero-actions">
+                <button class="primary-action" type="button" data-add-cart data-sku="pv01">
+                  Add to cart
+                </button>
+                <a class="secondary-action" href="cart.html">VIEW CART</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="detail-info panel">
+          <div class="detail-columns">
+            <article>
+              <p class="report-label">ACTIVES</p>
+              <p>Signal peptides, snow mushroom, panthenol, and glycerin.</p>
+            </article>
+            <article>
+              <p class="report-label">BEST FOR</p>
+              <p>Dehydrated skin, post-flight dullness, and evening recovery.</p>
+            </article>
+            <article>
+              <p class="report-label">APPLICATION</p>
+              <p>Two pumps on damp skin after cleansing. Seal with cream when needed.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="related-products panel">
+          <div class="section-heading">
+            <p class="eyebrow">PAIR WITH</p>
+            <h2>NEXT IN SEQUENCE</h2>
+          </div>
+          <div class="mini-grid">
+            <a class="mini-card" href="product-signal-wash.html">
+              <img src="https://unsplash.com/photos/qaniwuNUE5k/download?force=true&w=900" alt="Signal Wash bottle" />
+              <span>SIGNAL WASH</span>
+            </a>
+            <a class="mini-card" href="product-night-compression-mask.html">
+              <img src="https://unsplash.com/photos/pd4rqJMd51Q/download?force=true&w=900" alt="Night Compression Mask bottle" />
+              <span>NIGHT COMPRESSION MASK</span>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite" data-toast hidden>
+      <p data-toast-text>ITEM ADDED TO CART</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
